@@ -13,19 +13,22 @@ app.controller("UserController", function ($http, $routeParams) {
     }
     if (users != null) {
         console.log("Adding user: " + $routeParams.id)
-        self.user = users[$routeParams.id];
+        self.user = users[$routeParams.id -1];
     }
+    
 });
 
 app.config(function ($routeProvider) {
     $routeProvider
             .when("/persons", {
-                templateUrl: "views/personsList.html",
+                templateUrl: "views/homeView.html",
                 controller: "UserController"
                 
             })
-            .when("/persons/{id}", {
+            .when("/persons/:id", {
                 templateUrl: "views/personInfo.html",
-                controller: "UserController"
+                controller: "UserController",
+                controllerAs: "app"
             });
 });
+

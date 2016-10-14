@@ -1,6 +1,16 @@
 <body ng-app="viewApp" ng-controller="UserController as ctrl">
     <h1>List Of All Persons</h1>
-    <div ng-repeat="user in ctrl.users">
-        {{user.first}}
-    </div>
+    <table class="table">
+        <tr>
+            <th></th>
+            <th>Name</th>
+            <th>Details</th>
+        </tr>
+        <tr  ng-repeat="user in ctrl.users">
+            <td><img src="{{user.picture.thumbnail}}"></td>
+            <td>{{user.first}} {{user.last}}</td>
+            <td><a href="#/persons/{{user.id}}">Details</a></td>
+        </tr>
+
+    </table>
 </body>

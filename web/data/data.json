@@ -1,10 +1,11 @@
 {
     "users": [
         {
+            "id": "1",
             "gender": "male",
-            "title": "mr",
-            "first": "francisco",
-            "last": "medina",
+            "title": "Mr",
+            "first": "Francisco",
+            "last": "Medina",
             "street": "2748 w dallas st",
             "city": "flowermound",
             "state": "new jersey",
@@ -19,10 +20,11 @@
             }
         },
         {
+            "id": "2",
             "gender": "female",
-            "title": "mrs",
-            "first": "sherry",
-            "last": "elliott",
+            "title": "Mrs",
+            "first": "Sherry",
+            "last": "Elliott",
             "street": "3251 brown terrace",
             "city": "wichita falls",
             "state": "washington",
@@ -37,10 +39,11 @@
             }
         },
         {
+            "id": "3",
             "gender": "male",
-            "title": "mr",
-            "first": "johnny",
-            "last": "medina",
+            "title": "Mr",
+            "first": "Johnny",
+            "last": "Medina",
             "street": "1313 samaritan dr",
             "city": "redding",
             "state": "new hampshire",
