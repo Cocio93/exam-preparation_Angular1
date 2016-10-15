@@ -1,5 +1,25 @@
 <div>
     <h1>Details about {{app.user.first}} {{app.user.last}}</h1>
     <img src="{{user.picture.thumbnail}}">
-    <h3>{{app.user.title}}. {{app.user.first}} {{app.user.last}}</h3>
+    <h3><u>{{app.user.title}}. {{app.user.first}} {{app.user.last}}</u></h3>
+
+    <div class="col-sm-6">
+        <p><b>Gender:</b> {{app.user.gender}}</p><br>
+        <p><b>First Name:</b> {{app.user.first}}</p><br>
+        <p><b>Last Name:</b> {{app.user.last}}</p><br>
+        <br>
+        <p><b>Street:</b> {{app.user.street}}</p><br>
+        <p><b>City:</b> {{app.user.city}}</p><br>
+        <p><b>Zip:</b> {{app.user.zip}}</p><br>
+        <br>
+        <p><b>Phone:</b> {{app.user.phone}}</p><br>
+        <p><b>Cell:</b> {{app.user.cell}}</p><br>
+        <p><b>Email:</b> {{app.user.email}}</p><br>
+        
+            
+    </div>
+    
+    <div class="col-sm-6">
+        <img src="{{app.user.picture.large}}">
+    </div>
 </div>
